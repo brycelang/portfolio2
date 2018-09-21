@@ -1,0 +1,1118 @@
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Black;
+  src: url('../fonts/montserrat/Montserrat-Black.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url('../fonts/montserrat/Montserrat-SemiBold.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url('../fonts/montserrat/Montserrat-Medium.ttf'); 
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: Poppins-Regular, sans-serif;
+}
+#accordion-resizer {
+  padding: 20px;
+  width: auto;
+  height: 175px;
+  overflow: auto;
+}
+#accordion-resizer1 {
+  padding: 20px;
+  width: auto;
+  height: 175px;
+  overflow: auto;
+}
+
+/*---------------------------------------------*/
+a {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/*---------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+p {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder { color: #adadad;}
+input:-moz-placeholder { color: #adadad;}
+input::-moz-placeholder { color: #adadad;}
+input:-ms-input-placeholder { color: #adadad;}
+
+textarea::-webkit-input-placeholder { color: #adadad;}
+textarea:-moz-placeholder { color: #adadad;}
+textarea::-moz-placeholder { color: #adadad;}
+textarea:-ms-input-placeholder { color: #adadad;}
+
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+
+/*---------------------------------------------*/
+.container {
+	max-width: 1200px;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Utility ]*/
+
+.bg0 {background-color: #fff;}
+.bg1 {background-color: #f7f7f7;}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Contact ]*/
+
+.container-contact100 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #667467;
+  
+}
+
+.wrap-contact100 {
+  width: 800px;
+  height: 600px;
+  background: #283018;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 62px 55px 90px 55px;
+}
+
+
+/*------------------------------------------------------------------
+[  ]*/
+
+.contact100-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact100-form-title {
+  display: block;
+  width: 100%;
+  font-family: Montserrat-Black;
+  font-size: 39px;
+  color: #f0eceb;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 59px;
+}
+
+.card-header{
+  background: #283018;
+}
+.btn{
+  background: #aa863a;
+  color:#f0eceb;
+  border:none;
+}
+
+.btn-outline-success:hover{
+  border:none;
+  background:#aa863a;
+}
+
+
+
+/*------------------------------------------------------------------
+[  ]*/
+
+.wrap-input100 {
+  width: 50%;
+  position: relative;
+  border: 1px solid #e9e7da;
+  border-radius: 5px;
+  padding: 10px 10px 9px 22px;
+  margin-bottom: 0px;
+  /* margin-top: -10px; */
+}
+
+.rs1-wrap-input100 {
+  width: calc((100% - 30px) / 2);
+}
+
+.label-input100 {
+  font-family: Montserrat-SemiBold;
+  font-size: 10px;
+  color: #393939;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.input100 {
+  display: inline-block;
+  width: 100%;
+  background: transparent;
+  font-family: Montserrat-SemiBold;
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.2;
+  padding-right: 5px;
+}
+
+
+/*---------------------------------------------*/
+input.input100 {
+  height: 15px;
+}
+
+
+textarea.input100 {
+  min-height: 120px;
+  padding-top: 4px;
+  padding-bottom: 7px;
+}
+
+
+.input100:focus + .focus-input100::before {
+  width: 100%;
+}
+
+.has-val.input100 + .focus-input100::before {
+  width: 100%;
+}
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-contact100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.contact100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: #aa863a;
+  border-radius: 25px;
+
+  font-family: Montserrat-Medium;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact100-form-btn i {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact100-form-btn:hover {
+  background-color: #00ad5f;
+}
+
+.contact100-form-btn:hover i {
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transform: translateX(10px);
+}
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 768px) {
+  .rs1-wrap-input100 {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .wrap-contact100 {
+    padding: 62px 15px 90px 15px;
+  }
+
+  .wrap-input100 {
+    padding: 10px 10px 9px 10px;
+  }
+}
+
+
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  min-height: 40px;
+  background-color: #f7f7f7;
+  top: 35px;
+  left: 0px;
+  padding: 0 45px 0 22px;
+  pointer-events: none;
+
+  font-family: Montserrat-SemiBold;
+  font-size: 18px;
+  color: #fa4251;
+  line-height: 1.2;
+}
+
+.btn-hide-validate {
+  font-family: Material-Design-Iconic-Font;
+  font-size: 18px;
+  color: #fa4251;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 35px;
+  right: 12px;
+}
+
+.rs1-alert-validate.alert-validate::before {
+  background-color: #fff;
+}
+
+.true-validate::after {
+  content: "\f26b";
+  font-family: Material-Design-Iconic-Font;
+  font-size: 18px;
+  color: #00ad5f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 35px;
+  right: 10px;
+}
+
+/*---------------------------------------------*/
+@media (max-width: 576px) {
+  .alert-validate::before {
+    padding: 0 10px 0 10px;
+  }
+
+  .true-validate::after,
+  .btn-hide-validate {
+    right: 0px;
+    width: 30px;
+  }
+}
+
+
+/*==================================================================
+[ Restyle Select2 ]*/
+
+.select2-container {
+  display: block;
+  max-width: 100% !important;
+  width: auto !important;
+}
+
+.select2-container .select2-selection--single {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  outline: none;
+  position: relative;
+}
+
+/*------------------------------------------------------------------
+[ in select ]*/
+.select2-container .select2-selection--single .select2-selection__rendered {
+  font-family: Montserrat-SemiBold;
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.2;
+  padding-left: 0px ;
+  background-color: transparent;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.select2-selection__arrow b {
+  display: none;
+}
+
+.select2-selection__arrow::before {
+  content: '\f312';
+  font-family: Material-Design-Iconic-Font;
+  font-size: 18px;
+  color: #555555;
+}
+
+
+/*------------------------------------------------------------------
+[ Dropdown option ]*/
+.select2-container--open .select2-dropdown {
+  z-index: 1251;
+  width: calc(100% + 2px);
+  border: 0px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  left: -24px;
+
+  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 576px) {
+  .select2-container--open .select2-dropdown {
+    left: -12px;
+  }
+}
+
+.select2-dropdown--above {top: -38px;}
+.select2-dropdown--below {top: 10px;}
+
+.select2-container .select2-results__option[aria-selected] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+}
+
+@media (max-width: 576px) {
+  .select2-container .select2-results__option[aria-selected] {
+    padding-left: 12px;
+  }
+}
+
+.select2-container .select2-results__option[aria-selected="true"] {
+  background: #00ad5f;
+  color: white;
+}
+
+.select2-container .select2-results__option--highlighted[aria-selected] {
+  background: #00ad5f;
+  color: white;
+}
+
+.select2-results__options {
+  font-family: Montserrat-SemiBold;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.2;
+}
+
+.select2-search--dropdown .select2-search__field {
+  border: 1px solid #aaa;
+  outline: none;
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: #333333;
+  line-height: 1.2;
+}
+
+.wrap-input100 .dropDownSelect2 .select2-container--open {
+  width: 100% !important;
+}
+
+.wrap-input100 .dropDownSelect2 .select2-dropdown {
+  width: calc(100% + 2px) !important;
+}
+
+/*==================================================================
+[ Restyle Radio ]*/
+.wrap-contact100-form-radio {
+  width: 100%;
+  padding: 15px 25px 0 25px;
+}
+
+.contact100-form-radio {
+  padding-bottom: 5px;
+}
+
+.input-radio100 {
+  display: none;
+}
+
+.label-radio100 {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  font-family: Montserrat-SemiBold;
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.2;
+}
+
+.label-radio100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  background: #fff;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.label-radio100::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  background: #00ad5f;
+  -moz-background-clip: padding;     
+  -webkit-background-clip: padding;  
+  background-clip: padding-box; 
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: none;
+
+}
+
+.input-radio100:checked + .label-radio100::after {
+  display: block;
+}
+
+
+/*==================================================================
+[ rs NoUI ]*/
+.wrap-contact100-form-range {
+  width: 100%;
+  padding: 20px 25px 57px 25px;
+}
+
+.contact100-form-range-value {
+  font-family: Montserrat-SemiBold;
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.2;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.contact100-form-range-value input {
+  display: none;
+}
+
+#filter-bar {
+  height: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 9px;
+  background-color: #f7f7f7;
+}
+#filter-bar .noUi-connect {
+  border: 1px solid #e6e6e6;
+  border-radius: 9px;
+  background-color: #00ad5f;
+  box-shadow: none;
+}
+#filter-bar .noUi-handle {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #cccccc;
+  border-radius: 9px;
+  background: #f5f5f5;
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+  top: -8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#filter-bar .noUi-handle.noUi-handle-lower {
+  left: -1px;
+}
+
+#filter-bar .noUi-handle.noUi-handle-upper {
+  left: -39px;
+}
+
+#filter-bar .noUi-handle:before {
+  content: "";
+  display: block;
+  position: unset;
+  height: 12px;
+  width: 9px;
+  background-color: transparent;
+  border-left: 2px solid #cccccc;
+  border-right: 2px solid #cccccc;
+}
+#filter-bar .noUi-handle:after {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .wrap-contact100-form-range {
+    padding: 20px 0px 57px 0px;
+  }
+
+  .wrap-contact100-form-radio {
+    padding: 15px 0px 0 0px;
+  }
+}
+
+@import url("http://hello.myfonts.net/count/25cb92");
+/* FONTS ---------------------------------------------------------- */
+@font-face {
+  font-family: 'BrandonText-BoldItalic';
+  src: url("webfonts/25CB92_0_0.eot");
+  src: url("webfonts/25CB92_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/25CB92_0_0.woff") format("woff"), url("webfonts/25CB92_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'BrandonText-Bold';
+  src: url("webfonts/25CB92_1_0.eot");
+  src: url("webfonts/25CB92_1_0.eot?#iefix") format("embedded-opentype"), url("webfonts/25CB92_1_0.woff") format("woff"), url("webfonts/25CB92_1_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'BrandonText-Regular';
+  src: url("webfonts/25CB92_2_0.eot");
+  src: url("webfonts/25CB92_2_0.eot?#iefix") format("embedded-opentype"), url("webfonts/25CB92_2_0.woff") format("woff"), url("webfonts/25CB92_2_0.ttf") format("truetype");
+}
+
+#width{
+  width: 50px;
+}
+
+#responsive {
+  width: auto;
+  text-align: center;
+}
+/* COLORS ---------------------------------------------------------- */
+/* line 1, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+h1 {
+  font-family: BrandonText-Bold, Futura, Helvetica, Arial, sans-serif;
+  font-size: 3.5em;
+  color: #f0eceb;
+  text-align: center;
+  width: auto;
+}
+
+#responsive_headline h1{
+  color:#f0eceb;
+}
+/* line 7, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+h2 {
+  font-family: BrandonText-Regular, Futura, Helvetica, Arial, sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+  color:#fff;
+}
+
+/* line 13, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+p {
+  font-family: BrandonText-Regular, Futura, Helvetica, Arial, sans-serif;
+  color: #333a3e;
+  font-size: 1.4em;
+}
+
+/* line 18, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+pre {
+  color: #d5d7dd;
+  color: #bcbdc0;
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
+
+/* line 26, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(1) .content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -170px;
+}
+/* line 31, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(1) .content i {
+  font-size: 4.0em;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  color: #6ab29f;
+}
+/* line 38, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(1) .content h1 {
+  margin: 0;
+}
+/* line 41, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(1) .content h2 {
+  padding: 0 30px;
+}
+
+/* line 49, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(2) .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -180px;
+  margin-left: -160px;
+}
+/* line 55, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(2) .content h2 {
+  color: #d5d7dd;
+  text-align: left;
+}
+/* line 58, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(2) .content h2 .highlight {
+  color: white;
+}
+
+/* line 67, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(3) ul {
+  list-style-type: none;
+}
+/* line 68, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(3) .content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -230px;
+}
+/* line 73, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(3) .content h2 {
+  text-align: center;
+  font-size: 3.0em;
+}
+/* line 77, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(3) .content .explanation {
+  font-family: BrandonText-Regular, Futura, Helvetica, Arial, sans-serif;
+  color: #333a3e;
+  font-size: 1.4em;
+  text-align: center;
+  padding: 0 15%;
+}
+/* line 83, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(3) .content .explanation li {
+  color: #d5d7dd;
+}
+
+/* line 92, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(4) pre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -220px 0 0 -450px;
+}
+
+/* line 102, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(5) .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -350px 0 0 -450px;
+}
+/* line 108, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(5) h1 {
+  color: #333a3e;
+}
+/* line 111, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(5) pre {
+  color: #333a3e;
+}
+
+/* line 119, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(6) .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  text-align: center;
+}
+
+/* CSS Document */
+/* line 4, /Users/Jonas/Projects/repo/windows/scss/demo/_btn.scss */
+::selection {
+  background-color: #55595c;
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+}
+
+/* line 9, /Users/Jonas/Projects/repo/windows/scss/demo/_btn.scss */
+::-moz-selection {
+  background-color: #55595c;
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+}
+
+/* line 38, /Users/Jonas/Projects/repo/windows/scss/demo/_btn.scss */
+#wrap {
+  width: 500px;
+  margin: 13% auto 0;
+}
+
+/* line 49, /Users/Jonas/Projects/repo/windows/scss/demo/_btn.scss */
+#btn-wrap {
+  position: relative;
+  padding: 5px;
+  margin: 0 auto;
+  width: 230px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 30px;
+  background: #242428;
+  background: -webkit-gradient(linear, 0 bottom, 0 top, from(#2d2d30), to(#17171a));
+  background: -moz-linear-gradient(-90deg, #17171a, #2d2d30);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 1px 0 #37373b;
+  -moz-box-shadow: 0 1px 0 #37373b;
+  box-shadow: 0 1px 0 #37373b;
+}
+
+/* line 69, /Users/Jonas/Projects/repo/windows/scss/demo/_btn.scss */
+span.title {
+  color: #d6d6e7;
+  font: 15px/49px BrandonText-Bold, Futura, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  height: 50px;
+  width: 230px;
+  display: block;
+  position: relative;
+  -webkit-box-shadow: 0 -1px 0 #8d8d94, 0 1px 1px #0b0b0c;
+  -moz-box-shadow: 0 -1px 0 #8d8d94, 0 1px 1px #0b0b0c;
+  box-shadow: 0 -1px 0 #8d8d94, 0 1px 1px #0b0b0c;
+  background: #52525c;
+  background: -webkit-gradient(linear, 0 bottom, 0 top, from(#383840), to(#5a5a64));
+  background: -moz-linear-gradient(-90deg, #5a5a64, #383840);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  z-index: 5;
+  -webkit-transition: width .2s ease-out;
+  -moz-transition: width .2s ease-out;
+  -o-transition: width .2s ease-out;
+  text-align: center;
+}
+
+/* line 93, /Users/Jonas/Projects/repo/windows/scss/demo/_btn.scss */
+#btn-wrap:hover span.title {
+  font-size: 14px;
+  width: 135px;
+}
+
+/* line 98, /Users/Jonas/Projects/repo/windows/scss/demo/_btn.scss */
+#info {
+  position: absolute;
+  height: 50px;
+  width: 230px;
+  top: 5px;
+  right: 4px;
+  -webkit-box-shadow: 0 -1px 0 #404042, 0 1px 1px #0b0b0c;
+  -moz-box-shadow: 0 -1px 0 #404042, 0 1px 1px #0b0b0c;
+  box-shadow: 0 -1px 0 #404042, 0 1px 1px #0b0b0c;
+  background: #2a2a2d;
+  background: -webkit-gradient(linear, 0 bottom, 0 top, from(#212124), to(#2a2a2d));
+  background: -moz-linear-gradient(-90deg, #2a2a2d, #212124);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  z-index: 4;
+}
+
+/* line 116, /Users/Jonas/Projects/repo/windows/scss/demo/_btn.scss */
+#info p {
+  width: 65px;
+  margin: 12px 17px 0 0;
+  position: absolute;
+  right: 0;
+  color: #7c7c84;
+  font: 11px/12px Helvetica, Arial, sans-serif;
+  text-align: left;
+}
+
+/* line 126, /Users/Jonas/Projects/repo/windows/scss/demo/_btn.scss */
+.boxtuffs {
+  color: #7c7c84;
+  font: 12px Helvetica, Arial, sans-serif;
+  text-shadow: 0 -1px 0 black;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+}
+
+/* line 136, /Users/Jonas/Projects/repo/windows/scss/demo/_btn.scss */
+.boxtuffs:hover {
+  color: #27896a;
+}
+
+/* line 6, ../scss/main.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+#buttonRadio{
+  margin-left: 4px;
+}
+
+/* line 11, ../scss/main.scss */
+.window {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 18, ../scss/main.scss */
+.window:nth-child(1) {
+  /* background-image: url("../images/veggies_soil_4.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+	background: #3498db;
+    top: 0%;
+}
+
+/* line 18, ../scss/main.scss */
+.window:nth-child(2) {
+	background: #3498db;
+  top: 100%;
+}
+
+/* line 18, ../scss/main.scss */
+.window:nth-child(3) {
+
+	background: #3498db;
+
+  top: 200%;
+}
+
+/* line 18, ../scss/main.scss */
+.window:nth-child(4) {
+	background: #3498db;
+  top: 300%;
+}
+
+/* line 18, ../scss/main.scss */
+.window:nth-child(5) {
+  background: #d0482b;
+  top: 400%;
+}
+
+/* line 18, ../scss/main.scss */
+.window:nth-child(6) {
+  background: #231f20;
+  top: 500%;
+}
+.form-row {
+	margin-left: 9px;
+}
+.form-row>[class*=col-] {
+  padding-top: 4px;
+}
+.form-check-inline .form-check-input {
+  margin-left: 16px;
+}
+.btn-primary{
+  margin-left: 16px;
+}
+
+ #accordion {
+  margin-top: 100px;
+ }
+ #modalButton {
+   text-align: center;
+   margin-top:10px;
+ }
